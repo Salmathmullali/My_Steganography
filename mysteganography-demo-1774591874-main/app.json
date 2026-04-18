@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "MySteganography",
+    "slug": "mysteganography",
+    "scheme": "mysteganography",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0f"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mysteganography.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow MySteganography to access your photos to sign and scan artwork.",
+        "NSCameraUsageDescription": "Allow MySteganography to use your camera to capture artwork.",
+        "NSPhotoLibraryAddUsageDescription": "Allow MySteganography to save signed artwork to your photo library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0f"
+      },
+      "package": "com.mysteganography.app",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-media-library",
+      [
+        "expo-font",
+        {
+          "fonts": []
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "mysteganography-prototype"
+      }
+    }
+  }
+}
