@@ -24,6 +24,10 @@ The project is built as a modular ecosystem splitting heavy tensor processing fr
 *   **Backend (Inference Engine):** A robust **Python** processing pipeline that ingests user-uploaded mobile image layers, maps them into numeric matrices, and feeds them into the neural network without blocking the main runtime thread.
 *   **AI Core (Convolutional Neural Network):** An 8-layer deep **PyTorch** CNN trained locally (`train_cnn.py`) to catch microscopic noise artifacts and structural anomalies left behind by data-embedding software. Weights are exported to `final_model.pth`.
 
+  <br>
+  <img width="1050" height="827" alt="Screenshot 2026-06-26 203912" src="https://github.com/user-attachments/assets/08abf099-49b9-43fb-b4c8-996b9a4a7586" /><br><br>
+
+
 ---
 
 ## 📁 Repository Roadmap
