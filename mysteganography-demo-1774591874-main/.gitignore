@@ -1,18 +1,33 @@
+# Dependencies (NEVER upload to GitHub)
 node_modules/
+**/node_modules/
+
+# ML Models & Heavy Datasets
+*.pth
+*.pt
+*.bin
+*.onnx
+ml/dataset/
+
+# Build & System Files
 .expo/
 dist/
-npm-debug.*
+build/
+.DS_Store
+*.swp
+
+# Environment & Keys
+.env
+.env.*
+!.env.example
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-veda
+
+# IDE & Editor Settings
 .idea/
 .vscode/
-.env
-.env.*
-!.env.example
-.DS_Store
-*.swp
+*.orig.*
+veda/
